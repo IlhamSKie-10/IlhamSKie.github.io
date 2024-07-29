@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alam Nutrisi</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        button {
+            appearance: none;
+            background-color: transparent;
+            border: 0.125em solid #1A1A1A;
+            border-radius: 0.9375em;
+            box-sizing: border-box;
+            color: #3B3B3B;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0;
+            min-height: 3.75em;
+            min-width: 0;
+            outline: none;
+            padding: 1em 2.3em;
+            text-align: center;
+            text-decoration: none;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            will-change: transform;
+        }
+
+        button:disabled {
+            pointer-events: none;
+        }
+
+        button:hover {
+            color: #fff;
+            background-color: #1A1A1A;
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            box-shadow: none;
+            transform: translateY(0);
+        }
+
+        .service .box-container .box {
+            position: relative;
+            background-image: url('img/1.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .service .box-container .box h3,
+        .service .box-container .box p,
+        .service .box-container .box button {
+            position: relative;
+            z-index: 2;
+            color: white;
+        }
+
+        .service .box-container .box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .card {
+        width: 300px;
+        height: 400px;
+        background-image: linear-gradient(144deg, #006400, #43a047 60%, #8bc34a);
+        border: none;
+        border-radius: 10px;
+        padding-top: 10px;
+        position: relative;
+        margin: auto;
+        font-family: inherit;
+    }
+
+    .card span {
+        font-weight: 600;
+        color: white;
+        text-align: center;
+        display: block;
+        padding-top: 10px;
+        font-size: 4em;
+    }
+
+    .card .job {
+        font-weight: 400;
+        color: white;
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 5em;
+    }
+
+    .card .img {
+        width: 100px;
+        height: 100px;
+        background: #e8e8e8;
+        border-radius: 100%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .card button {
+        padding: 10px 30px;
+        display: block;
+        margin: auto;
+        border-radius: 8px;
+        border: none;
+        margin-top: 30px;
+        background: #e8e8e8;
+        color: #111111;
+        font-weight: 600;
+        font-size: 3em;
+    }
+
+    .card button:hover {
+        background: #212121;
+        color: #ffffff;
+    }
+
+
+    </style>
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+<a href="#" class="logo"><i class="fas fa-seedling"></i>Alam Nutrisi</a>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#service">Products</a></li>
+        <li><a href="#message">Contact Us</a></li>
+    </ul>
+</nav>
+
+<div class="fas fa-bars"></div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+<div class="content">
+    <div class="video-container">
+        <video src="img/bgvid.mp4" loop autoplay muted></video>
+    </div>
+    <h1>Cookies Alami, Nutrisi Tanpa Kompromi</h1>
+    <a href=".about"><button class="btn">explore.</button></a>
+
+</div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+<h1 class="heading" data-aos="fade-up"> <i class="fas fa-quote-left"></i> about us <i class="fas fa-quote-right"></i> </h1>
+
+<div class="row" data-aos="zoom-in">
+
+    <div class="image" data-aos="fade-left">
+        <img src="img/cookies.png" alt="">
+    </div>
+
+    <div class="content" data-aos="fade-right">
+        <h3>Cookies Alami, Nutrisi Tanpa Kompromi</h3>
+        <p>Selamat datang di Alam Nutrisi, sebuah perusahaan yang didirikan dengan niat baik untuk mempopulerkan gaya hidup sehat melalui konsumsi cookies yang dibuat dari bahan-bahan alami, termasuk daun singkellor dan bahan alami lainnya. Kami percaya bahwa makanan sehat tidak hanya baik untuk tubuh, tetapi juga bisa lezat dan menggugah selera. Nutrisi, kami berkomitmen untuk menghadirkan produk cookies yang tidak hanya lezat, tetapi juga kaya akan nutrisi.</p>
+        <p> Kami juga menggunakan bahan-bahan alami lainnya untuk memastikan setiap gigitan cookies kami memberikan manfaat kesehatan yang optimal.Kami memahami pentingnya inovasi dalam menciptakan makanan sehat. Oleh karena itu, tim kami terus melakukan penelitian dan pengembangan untuk menemukan dan menghadirkan berbagai pilihan makanan sehat lainnya. Tujuan kami adalah memberikan alternatif camilan yang sehat, enak, dan bergizi untuk Anda dan keluarga.Misi kami adalah membantu Anda menjalani gaya hidup sehat dengan menyediakan camilan yang terbuat dari bahan-bahan alami berkualitas tinggi. Kami percaya bahwa dengan menyediakan produk yang sehat dan lezat.</p>
+    </div>
+
+</div>
+
+<div class="box-container">
+
+    <div class="box" data-aos="fade-up">
+        <i class="fas fa-users"></i>
+        <h3>Kami</h3>
+        <p>Memiliki Komitmen</p>
+    </div>
+
+    <div class="box" data-aos="fade-up">
+        <i class="fas fa-tree"></i>
+        <h3>100%</h3>
+        <p>Bahan Alami</p>
+    </div>
+
+    <div class="box" data-aos="fade-up">
+        <i class="fas fa-donate"></i>
+        <h3>Harga</h3>
+        <p>Terjangkau</p>
+    </div>
+
+</div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- service section starts  -->
+
+<section class="service" id="service">
+
+<h1 class="heading" data-aos="fade-up"> <i class="fas fa-quote-left"></i> Our Products<i class="fas fa-quote-right"></i> </h1>
+
+<div class="box-container">
+
+    <div class="box" id="box1" data-aos="fade-up">
+
+        <h3>Cookies Singkelor</h3>
+        <p>Pesan sekarang</p>
+        <a href="https://forms.gle/sBfVHGqkuUpAb4888">
+            <button type="button" name="button">Pre-Order</button>
+        </a>
+    </div>
+
+</div>
+
+</section>
+
+<!-- service section ends -->
+
+<!-- project section starts  -->
+
+<section class="project" id="form" style="background-color: #e0e0e0;
+">
+<div class="box-container">
+    <div class="message" id="message" data-aos="fade-up">
+        <div class="card">
+            <div class="card-border-top">
+            </div>
+            <span>Alam Nutrisi</span>
+            <p class="job">Humas</p>
+            <a href="https://forms.gle/2JzBpbYNQgXcZYbC7">
+            <button type="submit"> Contact Us</button>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="footer">
+        <p style="Color:black;">Footer</p>
+    </div>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- footer section ends -->
+<!-- custom js file link  -->
+<script src="js/main.js"></script>
+</body>
+</html>
